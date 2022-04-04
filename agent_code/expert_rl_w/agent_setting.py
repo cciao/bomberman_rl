@@ -1,0 +1,32 @@
+import events as e
+import settings as s
+
+ACTIONS = ['UP', 'RIGHT', 'DOWN', 'LEFT', 'WAIT', 'BOMB']
+NUMBER_OF_ACTIONS = 6
+NUMBER_OF_FEATURE = 12
+
+# mini-batch
+BATCH_SIZE = 512
+TRANSITION_BUFFER_SIZE_MAX = 1024
+
+# Q-learning
+STEP_ALPHA = 1
+DECAY_GAMMA = 0.9
+N_STEP_LEARNING = True
+N_STEP = 4
+PRIORITY_LEARNING = True
+PRIORITY_RATIO = 0.75
+
+# epsilon greedy policy
+EPSILON_START = 0.2
+EPSILON_END = 0.01
+EPSILON_DECAY = 0.9995  # Diminishing Epsilon-Greedy
+
+# models
+FINAL_MODEL_NAME="model-1000"
+SAVE_MODEL = 100
+TRAINING_ROUNDS=5000
+
+#evaluation
+EVALUATION_PLOT = 100
+

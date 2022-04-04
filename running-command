@@ -1,0 +1,4 @@
+python3 main.py play --no-gui --my-agent base_rl --train 1 --n-rounds 200
+
+- press entry to move: python3 main.py play --turn-based --my-agent expert_rl
+- save stats: python3 main.py play --no-gui --save-stats --my-agent expert_rl --train 1 --n-rounds 200
